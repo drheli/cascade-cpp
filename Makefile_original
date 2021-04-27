@@ -127,20 +127,24 @@ graphs: graphs-papers graphs-performance graphs-zero-handling
 graphs-papers:
 	mkdir -p study/graphs/papers
 	rm -f study/graphs/papers/*.png
+	source $(CASCADE_PYTHON_DIR)/env/bin/activate && \
 	python $(CASCADE_PYTHON_DIR)/study/make_graphs.py study/graphs_demystifying.json \
 		--data-dir study/data/papers
+	source $(CASCADE_PYTHON_DIR)/env/bin/activate && \
 	python $(CASCADE_PYTHON_DIR)/study/make_graphs.py study/graphs_andre_reis_thesis.json \
 		--data-dir study/data/papers
 
 graphs-performance:
 	mkdir -p study/graphs/performance
 	rm -f study/graphs/performance/*.png
+	source $(CASCADE_PYTHON_DIR)/env/bin/activate && \
 	python $(CASCADE_PYTHON_DIR)/study/make_graphs.py study/graphs_performance.json \
 		--data-dir study/data/performance
 
 graphs-zero-handling:
 	mkdir -p study/graphs/zero_handling
 	rm -f study/graphs/zero_handling/*.png
+	source $(CASCADE_PYTHON_DIR)/env/bin/activate && \
 	python $(CASCADE_PYTHON_DIR)/study/make_graphs.py study/graphs_zero_handling.json \
 		--data-dir study/data/zero_handling
 
