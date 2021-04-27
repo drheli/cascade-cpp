@@ -77,6 +77,7 @@ HL: Necessary changes before successful installing
  # export PATH=$HOME/.local/bin:$PATH
 4. makefile in [Cascade-Python](https://github.com/brunorijsman/cascade-python) - *make install* requires *pip3* as python3 is updated.
 5. some gramma errors in file "/home/hl002/cascade-python/study/make_graphs.py"
+6. makefile in [Cascade-cpp](https://github.com/brunorijsman/cascade-cpp) - REMOVE "source $(CASCADE_PYTHON_DIR)/env/bin/activate && \"
 
 ```
 
