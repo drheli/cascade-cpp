@@ -70,7 +70,13 @@ To produce graphs, you need to have [Cascade-Python](https://github.com/brunorij
 installed in the $HOME/cascade-python directory.
 
 ```
-HL
+HL: Necessary changes before successful installing
+1. BASH: pip install plotly && pip install cufflinks && pip install pylint && sudo apt install python-pip 
+2. ADD $PATH: 
+ # pip show -f pylint
+ # export PATH=$HOME/.local/bin:$PATH
+4. makefile in [Cascade-Python](https://github.com/brunorijsman/cascade-python) - *make install* requires *pip3* as python3 is updated.
+5. some gramma errors in file "/home/hl002/cascade-python/study/make_graphs.py"
 
 ```
 
